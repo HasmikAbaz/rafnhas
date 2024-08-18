@@ -1,82 +1,116 @@
-<!DOCTYPE html> 
-<html lang="hy"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Հարսանյաց Ցերեկույթի Հրավիրատոմս</title> 
-    <link rel="stylesheet" href="styles.css"> 
-</head> 
-<body> 
-    <header class="fade-in"> 
-        <h1>Բարի գալուստ մեր Հարսանյաց Ցերեկույթի Կայք</h1> 
-        <p>Ձեզ ենք ներկայացնում մեր հատուկ օրվա մանրամասները</p> 
-    </header> 
- 
-    <section id="details" class="slide-up"> 
-        <h2>Հարսանիքի Մանրամասներ</h2> 
-        <p><strong>Օր և Ժամ:</strong> 16 Հունիս 2024, 19:30</p> 
-        <p><strong>Վայր:</strong> Հայաստանի Պոլիտեխնիկական Համալսարան, Բացօթյա Տարածք</p> 
-        <p><strong>Հագուստի Նախընտրելի Ոճ:</strong> Կոկտեյլային</p> 
-    </section> 
- 
-    <section id="cake" class="zoom-in"> 
-        <h2>Հարսանյաց Տորթ</h2> 
-        <img src="cake.jpg" alt="Հարսանյաց Տորթ"> 
-        <p id="cake-description">Մեր հարսանյաց տորթը դասական վանիլային համով է, զարդարված թարմ մրգերով և ծաղիկներով:</p> 
-        <button onclick="changeCakeDescription()">Փոխել Տորթի Նկարագրությունը</button> 
-    </section> 
- 
-    <section id="guests" class="fade-in"> 
-        <h2>Հյուրերի Քանակ</h2> 
-        <p>Սպասվում է մոտավորապես 150 հյուր:</p> 
-    </section> 
- 
-    <section id="menu" class="slide-up"> 
-        <h2>Սննդի Մենյու</h2> 
-        <p>Մեր մենյուն ներառում է՝</p> 
-        <ul> 
-            <li>Սկսնակների տեսականի</li> 
-            <li>Հիմնական ուտեստներ՝ մսի և ձկան տարբերակներով</li> 
-            <li>Բանջարեղենային և վեգան ուտեստներ</li> 
-            <li>Աղանդեր և քաղցրավենիք</li> 
-        </ul> 
-    </section> 
- 
-    <section id="music" class="zoom-in"> 
-        <h2>Երաժշտական Խմբեր</h2> 
-        <p>Մեզ ուրախացնելու են <strong>Reincarnation Orchestra</strong> և <strong>DJ Aram</strong>:</p> 
-    </section> 
- 
-    <section id="schedule" class="fade-in"> 
-        <h2>Օրակարգ</h2> 
-        <p><strong>19:30:</strong> Հրավերք</p> 
-        <p><strong>20:00:</strong> Արարողություն</p> 
-        <p><strong>21:00:</strong> Ընդունելություն և պարեր</p> 
-    </section> 
- 
-    <footer class="slide-up"> 
-        <h2>Կապ</h2> 
-        <p>Հարցերի համար կարող եք կապվել մեզ հետ՝</p> 
-        <p><strong>Email:</strong> example@example.com</p> 
-        <p><strong>Հեռախոս:</strong> +374 00 000000</p> 
-    </footer> 
- 
-    <script> 
-        // Էֆեկտները ավելացնելու համար, այս կոդը հետաձգում է բացումը 
-        document.addEventListener("DOMContentLoaded", function() { 
-            const elements = document.querySelectorAll('.fade-in, .slide-up, .zoom-in'); 
-            elements.forEach((el, index) => { 
-                setTimeout(() => { 
-                    el.classList.add('visible'); 
-                }, index * 200); // յուրաքանչյուր տարրի հայտնվելը հաջորդաբար 200 միլիվայրկյան հետաձգում է 
-            }); 
-        }); 
- 
-        // Տորթի նկարագրության փոխման ֆունկցիա 
-        function changeCakeDescription() { 
-            const cakeDescription = document.getElementById('cake-description'); 
-            cakeDescription.textContent = 'Նոր տորթի նկարագրությունը՝ մեր տորթը բազմահարկ շոկոլադային համով է՝ զարդարված ոսկեգույն մանրաթելերով։'; 
-        } 
-    </script> 
-</body> 
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Հարսանյաց Ցերեկույթի Հրավիրատոմս</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Բարի գալուստ մեր Հարսանյաց Ցերեկույթի Կայք</h1>
+        <p>Ձեզ ենք ներկայացնում մեր հատուկ օրվա մանրամասները</p>
+    </header>
+
+    <div class="image-slider fade-in">
+        <img src="image1.jpg" alt="Հարսանիքի Նկար 1">
+        <img src="image2.jpg" alt="Հարսանիքի Նկար 2">
+        <img src="image3.jpg" alt="Հարսանիքի Նկար 3">
+    </div>
+
+    <section id="details" class="slide-up">
+        <h2>Հարսանիքի Մանրամասներ</h2>
+        <div class="details-grid">
+            <div>
+                <p><strong>Օր և Ժամ:</strong> 16 Հունիս 2024, 19:30</p>
+                <p><strong>Վայր:</strong> Հայաստանի Պոլիտեխնիկական Համալսարան, Բացօթյա Տարածք</p>
+            </div>
+            <div>
+                <p><strong>Հագուստի Նախընտրելի Ոճ:</strong> Կոկտեյլային</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cake" class="zoom-in">
+        <h2>Հարսանյաց Տորթ</h2>
+        <div class="image-section">
+            <img src="cake.jpg" alt="Հարսանյաց Տորթ">
+        </div>
+        <p id="cake-description">Մեր հարսանյաց տորթը դասական վանիլային համով է, զարդարված թարմ մրգերով և ծաղիկներով:</p>
+        <button onclick="changeCakeDescription()">Փոխել Տորթի Նկարագրությունը</button>
+    </section>
+
+    <section id="guests" class="fade-in">
+        <h2>Հյուրերի Քանակ</h2>
+        <p>Սպասվում է մոտավորապես 150 հյուր:</p>
+    </section>
+
+    <section id="menu" class="slide-up">
+        <h2>Սննդի Մենյու</h2>
+        <div class="menu-grid">
+            <div>
+                <ul>
+                    <li>Սկսնակների տեսականի</li>
+                    <li>Հիմնական ուտեստներ՝ մսի և ձկան տարբերակներով</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Բանջարեղենային և վեգան ուտեստներ</li>
+                    <li>Աղանդեր և քաղցրավենիք</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="music" class="zoom-in">
+        <h2>Երաժշտական Խմբեր</h2>
+        <p>Մեզ ուրախացնելու են <strong>Reincarnation Orchestra</strong> և <strong>DJ Aram</strong>:</p>
+    </section>
+
+    <section id="schedule" class="fade-in">
+        <h2>Օրակարգ</h2>
+        <p><strong>19:30:</strong> Հրավերք</p>
+        <p><strong>20:00:</strong> Արարողություն</p>
+        <p><strong>21:00:</strong> Ընդունելություն և պարեր</p>
+    </section>
+
+    <footer class="slide-up">
+        <h2>Կապ</h2>
+        <p>Հարցերի համար կարող եք կապվել մեզ հետ՝</p>
+        <p><strong>Email:</strong> example@example.com</p>
+        <p><strong>Հեռախոս:</strong> +374 00 000000</p>
+    </footer>
+
+    <script>
+        // Էֆեկտներ
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.fade-in, .slide-up, .zoom-in');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 200);
+            });
+
+            // Նկարների սլայդեր
+            const slider = document.querySelector('.image-slider');
+            const images = slider.querySelectorAll('img');
+            let currentImageIndex = 0;
+
+            function changeSlide() {
+                images[currentImageIndex].classList.remove('visible');
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                images[currentImageIndex].classList.add('visible');
+            }
+
+            setInterval(changeSlide, 3000);
+        });
+
+        // Տորթի նկարագրության փոխման ֆունկցիա
+        function changeCakeDescription() {
+            const cakeDescription = document.getElementById('cake-description');
+            cakeDescription.textContent = 'Նոր տորթի նկարագրությունը՝ մեր տորթը բազմահարկ շոկոլադային համով է՝ զարդարված ոսկեգույն մանրաթելերով։';
+        }
+    </script>
+</body>
 </html>
