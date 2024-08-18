@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 .hero {
@@ -14,16 +15,26 @@ body {
     background-position: center;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .hero h1 {
     font-size: 4rem;
+    animation: fadeIn 2s ease-in;
+}
+
+.countdown {
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 .section {
     padding: 40px 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .section h2 {
@@ -57,4 +68,20 @@ body {
 
 .footer p {
     margin: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+[data-scroll] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+[data-scroll-visible] {
+    opacity: 1;
+    transform: translateY(0);
 }
