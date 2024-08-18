@@ -1,91 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasmik & Raphael's Wedding</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f3f4f6;
-            color: #333;
-            text-align: center;
-        }
-        .hero {
-            background-image: url('https://yourimageurl.com');
-            height: 400px;
-            background-size: cover;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero h1 {
-            font-size: 4rem;
-        }
-        .section {
-            padding: 40px 20px;
-        }
-        .agenda, .menu {
-            text-align: left;
-            margin: auto;
-            max-width: 600px;
-        }
-        .section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .cake img {
-            width: 50%;
-            border-radius: 15px;
-        }
-        .footer {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <div class="hero">
-        <h1>Hasmik & Raphael's Wedding</h1>
-    </div>
-
-    <div class="section agenda">
-        <h2>Agenda of the Day</h2>
-        <ul>
-            <li><strong>16:00</strong> - Guests Arrival</li>
-            <li><strong>17:00</strong> - Wedding Ceremony</li>
-            <li><strong>18:00</strong> - Cocktail Reception</li>
-            <li><strong>19:00</strong> - Dinner and Toasts</li>
-            <li><strong>21:00</strong> - Cake Cutting</li>
-            <li><strong>22:00</strong> - Party and Dancing</li>
-        </ul>
-    </div>
-
-    <div class="section venue">
-        <h2>Venue</h2>
-        <p><strong>O2 Café and Bar</strong></p>
-        <p>Yerevan, Armenia</p>
-    </div>
-
-    <div class="section menu">
-        <h2>Menu</h2>
-        <ul>
-            <li>Starter: Caprese Salad</li>
-            <li>Main Course: Grilled Chicken with Vegetables</li>
-            <li>Dessert: Chocolate Mousse</li>
-        </ul>
-    </div>
-
-    <div class="section cake">
-        <h2>Wedding Cake</h2>
-        <img src="https://yourcakeimageurl.com" alt="Wedding Cake">
-    </div>
-
-    <div class="footer">
-        <p>We can't wait to celebrate with you! See you on 20 September 2024!</p>
-    </div>
-</body>
+<!DOCTYPE html> 
+<html lang="hy"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Հարսանյաց Ցերեկույթի Հրավիրատոմս</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body> 
+    <header class="fade-in"> 
+        <h1>Բարի գալուստ մեր Հարսանյաց Ցերեկույթի Կայք</h1> 
+        <p>Ձեզ ենք ներկայացնում մեր հատուկ օրվա մանրամասները</p> 
+    </header> 
+ 
+    <section id="details" class="slide-up"> 
+        <h2>Հարսանիքի Մանրամասներ</h2> 
+        <p><strong>Օր և Ժամ:</strong> 16 Հունիս 2024, 19:30</p> 
+        <p><strong>Վայր:</strong> Հայաստանի Պոլիտեխնիկական Համալսարան, Բացօթյա Տարածք</p> 
+        <p><strong>Հագուստի Նախընտրելի Ոճ:</strong> Կոկտեյլային</p> 
+    </section> 
+ 
+    <section id="cake" class="zoom-in"> 
+        <h2>Հարսանյաց Տորթ</h2> 
+        <img src="cake.jpg" alt="Հարսանյաց Տորթ"> 
+        <p id="cake-description">Մեր հարսանյաց տորթը դասական վանիլային համով է, զարդարված թարմ մրգերով և ծաղիկներով:</p> 
+        <button onclick="changeCakeDescription()">Փոխել Տորթի Նկարագրությունը</button> 
+    </section> 
+ 
+    <section id="guests" class="fade-in"> 
+        <h2>Հյուրերի Քանակ</h2> 
+        <p>Սպասվում է մոտավորապես 150 հյուր:</p> 
+    </section> 
+ 
+    <section id="menu" class="slide-up"> 
+        <h2>Սննդի Մենյու</h2> 
+        <p>Մեր մենյուն ներառում է՝</p> 
+        <ul> 
+            <li>Սկսնակների տեսականի</li> 
+            <li>Հիմնական ուտեստներ՝ մսի և ձկան տարբերակներով</li> 
+            <li>Բանջարեղենային և վեգան ուտեստներ</li> 
+            <li>Աղանդեր և քաղցրավենիք</li> 
+        </ul> 
+    </section> 
+ 
+    <section id="music" class="zoom-in"> 
+        <h2>Երաժշտական Խմբեր</h2> 
+        <p>Մեզ ուրախացնելու են <strong>Reincarnation Orchestra</strong> և <strong>DJ Aram</strong>:</p> 
+    </section> 
+ 
+    <section id="schedule" class="fade-in"> 
+        <h2>Օրակարգ</h2> 
+        <p><strong>19:30:</strong> Հրավերք</p> 
+        <p><strong>20:00:</strong> Արարողություն</p> 
+        <p><strong>21:00:</strong> Ընդունելություն և պարեր</p> 
+    </section> 
+ 
+    <footer class="slide-up"> 
+        <h2>Կապ</h2> 
+        <p>Հարցերի համար կարող եք կապվել մեզ հետ՝</p> 
+        <p><strong>Email:</strong> example@example.com</p> 
+        <p><strong>Հեռախոս:</strong> +374 00 000000</p> 
+    </footer> 
+ 
+    <script> 
+        // Էֆեկտները ավելացնելու համար, այս կոդը հետաձգում է բացումը 
+        document.addEventListener("DOMContentLoaded", function() { 
+            const elements = document.querySelectorAll('.fade-in, .slide-up, .zoom-in'); 
+            elements.forEach((el, index) => { 
+                setTimeout(() => { 
+                    el.classList.add('visible'); 
+                }, index * 200); // յուրաքանչյուր տարրի հայտնվելը հաջորդաբար 200 միլիվայրկյան հետաձգում է 
+            }); 
+        }); 
+ 
+        // Տորթի նկարագրության փոխման ֆունկցիա 
+        function changeCakeDescription() { 
+            const cakeDescription = document.getElementById('cake-description'); 
+            cakeDescription.textContent = 'Նոր տորթի նկարագրությունը՝ մեր տորթը բազմահարկ շոկոլադային համով է՝ զարդարված ոսկեգույն մանրաթելերով։'; 
+        } 
+    </script> 
+</body> 
 </html>
